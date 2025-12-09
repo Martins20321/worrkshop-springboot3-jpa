@@ -28,7 +28,7 @@ public class UserResource {
 	}
 	
 	@GetMapping(value = "/{id}") //Parametro de URL, para buscar por Id
-	public ResponseEntity<User> findById(@PathVariable Long id){
+	public ResponseEntity<User> findById(@PathVariable Long id){ //Aceitando o parâmetro
 		User obj = service.findById(id);
 		return ResponseEntity.ok().body(obj);
 	}
