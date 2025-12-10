@@ -95,6 +95,7 @@ public class Product implements Serializable {
 		return categories;
 	}
 	
+	//Caso precise
 	@JsonIgnore //Para quando eu pesquisar um produto, não mostrar seus items
 	public Set<Order> getOrders(){
 		Set<Order> set = new HashSet<>();
