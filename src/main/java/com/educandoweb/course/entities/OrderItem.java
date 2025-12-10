@@ -16,7 +16,7 @@ public class OrderItem implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@EmbeddedId
-	private OrderItemPK id;
+	private OrderItemPK id; //O id acessa a classe OrderItemPK
 	private Integer quantity;
 	private Double price;
 
