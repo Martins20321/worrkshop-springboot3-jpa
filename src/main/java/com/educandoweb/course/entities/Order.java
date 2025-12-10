@@ -102,6 +102,15 @@ public class Order implements Serializable{
 	public Set<OrderItem> getItems() {
 		return items;
 	}
+	
+	//Padrão java EE, utilizar o Get
+	public Double getTotal() {//Método para calcular o total (Soma dos subTotais)
+		double sum = 0.0;
+		for(OrderItem x : items) { //Varrer toda a lista
+			sum += x.getSubTotal();
+		}
+		return sum;
+	}
 
 	@Override
 	public int hashCode() {

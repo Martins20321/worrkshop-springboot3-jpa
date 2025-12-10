@@ -17,8 +17,8 @@ public class OrderItem implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@EmbeddedId
-	private OrderItemPK id = new OrderItemPK(); //O id acessa a classe OrderItemPK
-	
+	private OrderItemPK id = new OrderItemPK(); // O id acessa a classe OrderItemPK
+
 	private Integer quantity;
 	private Double price;
 
@@ -34,7 +34,7 @@ public class OrderItem implements Serializable {
 		this.price = price;
 	}
 
-	@JsonIgnore //O java EE, estabelece que o padrão é o Get
+	@JsonIgnore // O java EE, estabelece que o padrão é o Get
 	public Order getOrder() {
 		return id.getOrder();
 	}
@@ -65,6 +65,11 @@ public class OrderItem implements Serializable {
 
 	public void setPrice(Double price) {
 		this.price = price;
+	}
+
+	// No java EE se utiliza o get
+	public Double getSubTotal() { // Método que calcula o subtotal(item pedido * Preço)
+		return quantity * price;
 	}
 
 	@Override
