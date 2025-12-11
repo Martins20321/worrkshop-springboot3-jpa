@@ -3,11 +3,16 @@ package com.educandoweb.course.resources.exceptions;
 import java.io.Serializable;
 import java.time.Instant;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatTypes;
+
 //Formatando a entrega do erro (JSON)
 public class StandardError implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 	
+	//Formatando o instant
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'", timezone = "GMT")
 	private Instant timestamp;
 	private Integer status;
 	private String error;
