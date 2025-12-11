@@ -54,7 +54,7 @@ O projeto está configurado para usar o perfil `test` e o banco de dados H2 para
 
 ## 🛡️ Tratamento de Exceções
 
-O projeto utiliza um `ResourceExceptionHandler` (via `@ControllerAdvice`) para intercetar exceções e retornar respostas HTTP padronizadas (JSON de erro), garantindo que a API não retorne erros internos 500 para falhas esperadas.
+O projeto utiliza um `ResourceExceptionHandler` (via `@ControllerAdvice`) para interceptar exceções e retornar respostas HTTP padronizadas (JSON de erro), garantindo que a API não retorne erros internos 500 para falhas esperadas.
 
 | Exceção de Serviço | Código HTTP | Descrição |
 | :--- | :--- | :--- |
