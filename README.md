@@ -71,6 +71,10 @@ O projeto utiliza um `ResourceExceptionHandler` (via `@ControllerAdvice`) para i
 | **User** | `PUT` | `/users/{id}` | Atualizar os dados de um usuário (Nome, Email, Telefone). | `200 OK` / `404 Not Found` |
 | **User** | `DELETE` | `/users/{id}` | Remover um usuário (com tratamento 404). | `204 No Content` / `404 Not Found` |
 | **Order** | `GET` | `/orders/{id}` | Buscar um pedido, incluindo items e produtos. | `200 OK` |
+| **Product** | `GET` | `/products` | Listar todos os produtos. | `200 OK` |
+| **Product** | `GET` | `/products/{id}` | Buscar produto por ID. | `200 OK` / `404 Not Found` |
+| **Category** | `GET` | `/categories` | Listar todas as categorias. | `200 OK` |
+| **Category** | `GET` | `/categories/{id}` | Buscar categoria por ID. | `200 OK` / `404 Not Found` |
 
 ---
 *Projeto baseado no curso Java COMPLETO do Dr. Nélio Alves.*
