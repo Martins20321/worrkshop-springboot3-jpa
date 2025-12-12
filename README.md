@@ -4,7 +4,7 @@
 
 Este projeto é uma API RESTful completa desenvolvida com **Spring Boot** para simular um sistema de gerenciamento de pedidos e vendas (e-commerce).
 
-**Este é o foi meu primeiro projeto prático utilizando o Spring Boot**, e estou muito feliz em compartilhar ele.
+**Este é o meu primeiro projeto prático utilizando o Spring Boot**, e estou muito feliz em compartilhar ele.
 
 Os principais conceitos dominados incluem:
 * **Modelagem de Domínio com JPA/Hibernate:** Implementação de um modelo de domínio complexo com associações One-to-One, One-to-Many e Many-to-Many (com atributos extras)
